@@ -8,8 +8,11 @@ class Critter():
         print("Cześć! Jestem egzmeplarzem klasy Critter.")
 
 # część główna
-crit = Critter()        #konkretyzacja obiektu
-crit.talk()             #wywołanie metody talk()
+crit1 = Critter()        #konkretyzacja obiektu
+crit2 = Critter()
+
+crit1.talk()             #wywołanie metody talk()
+crit2.talk()
 
 input("\n\nAby zakończyć program, naciśnij klawisz Enter.")
 #########################################################################
