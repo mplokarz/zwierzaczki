@@ -1,10 +1,10 @@
-class Critter(object):
+class Critter():
     #Wirtualny pupil
 
     def __init__(self):
         print("Urodził się nowy zwierzak!")     # specjalna metoda (konstruktor) wywoływana automatycznie zaraz po utworzeniu nowego obiektu
 
-    def talk(self):
+    def talk(self):                             # ta metoda ma tylko jeden parametr (niezbędny), ktorego akurat nie używa, dostarcza metodzie sposób odwołąnai się do samego obiektu
         print("Cześć! Jestem egzmeplarzem klasy Critter.")
 
 # część główna
@@ -13,6 +13,15 @@ crit.talk()             #wywołanie metody talk()
 
 input("\n\nAby zakończyć program, naciśnij klawisz Enter.")
 #########################################################################
+
+
+
+
+
+
+
+
+
 
 
 
