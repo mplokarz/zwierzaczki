@@ -1,5 +1,6 @@
-class Critter():
-    #Wirtualny pupil
+class Critter(object):
+    # Zwierzak z atrybutem
+    # Demonstruje tworzenie atrybutów obiektu i uzyskiwanie do nich dostępu
 
     def __init__(self, name):
         print("Urodził się nowy zwierzak!")     # specjalna metoda (konstruktor) wywoływana automatycznie zaraz po utworzeniu nowego obiektu klasy Critter
@@ -11,16 +12,27 @@ class Critter():
         return rep
 
     def talk(self):                             # ta metoda ma tylko jeden parametr (niezbędny), ktorego akurat nie używa, dostarcza metodzie sposób odwołąnai się do samego obiektu
-        print("Cześć! Jestem egzmeplarzem klasy Critter.")
+        print("Cześć! Jestem " + self.name + "\n")
 
 # część główna
-crit1 = Critter()        #konkretyzacja obiektu
-crit2 = Critter()
+crit1 = Critter("Reksio")        #konkretyzacja obiektu
+crit1.talk()                     #wywołanie metody talk()
 
-crit1.talk()             #wywołanie metody talk()
+crit2 = Critter("Bobek")
 crit2.talk()
 
-input("\n\nAby zakończyć program, naciśnij klawisz Enter.")
+print("Wyświetlenie obiektu crit1:")
+print(crit1)
+print("Bezpośrednie wyświetlenie wartości atrybutu crit1.name:")
+print(crit1.name)
+
+
+#input("\n\nAby zakończyć program, naciśnij klawisz Enter.")
+
+
+
+
+
 #########################################################################
 
 
